@@ -38,7 +38,7 @@ jobs:
            token: ${{ secrets.TOKEN_PAT }}           
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
-      - name: Render Quarto Project Profile Def
+      - name: Render Quarto Project Profile tr
         uses: quarto-dev/quarto-actions/render@v2
         env:
           QUARTO_PROFILE: tr
