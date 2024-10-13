@@ -36,6 +36,8 @@ jobs:
            repository: 'ati-ozgur/the-little-blue-book-on-scheduling-turkish'
            path: main
            token: ${{ secrets.TOKEN_PAT }}           
+      - name: check directories
+        run: ls -al
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
       - name: Render Quarto Project Profile tr
