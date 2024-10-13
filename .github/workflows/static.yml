@@ -29,8 +29,7 @@ jobs:
         env: 
             super_secret: ${{ secrets.TOKEN_PAT }}
         if: ${{ env.TOKEN_PAT == '' }}
-        run: 'echo "echo the secret \"TOKEN_PAT\" has not been made; echo please go to \"settings \> secrets \> actions\" to create it"
-
+        run: echo "TOKEN_PAT does not exists"
      - name: Checkout
         uses: actions/checkout@v4
         with:
