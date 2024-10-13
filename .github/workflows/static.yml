@@ -27,6 +27,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+           repository: 'ati-ozgur/the-little-blue-book-on-scheduling-turkish'
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
