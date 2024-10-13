@@ -1,5 +1,5 @@
 # Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+name: Checkout from private repo deploy, quarto render, deploy to github pages 
 
 on:
   # Allows you to run this workflow manually from the Actions tab
