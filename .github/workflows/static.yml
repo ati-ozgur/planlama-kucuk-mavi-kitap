@@ -36,13 +36,22 @@ jobs:
            repository: 'ati-ozgur/the-little-blue-book-on-scheduling-turkish'
            path: main
            token: ${{ secrets.TOKEN_PAT }}           
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+      - name: Render Quarto Project Profile Def
+        uses: quarto-dev/quarto-actions/render@v2
+        env:
+          QUARTO_PROFILE: tr
+        with:
+          to: html 
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
-          path: '.'
+          path: '_site'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
