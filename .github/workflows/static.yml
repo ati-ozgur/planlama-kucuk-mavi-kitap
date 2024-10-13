@@ -30,7 +30,7 @@ jobs:
             super_secret: ${{ secrets.TOKEN_PAT }}
         if: ${{ env.TOKEN_PAT == '' }}
         run: echo "TOKEN_PAT does not exists"
-     - name: Checkout
+      - name: Checkout
         uses: actions/checkout@v4
         with:
            repository: 'ati-ozgur/the-little-blue-book-on-scheduling-turkish'
